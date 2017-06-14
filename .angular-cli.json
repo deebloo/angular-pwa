@@ -18,9 +18,7 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "styles": [
-        "styles.css"
-      ],
+      "styles": [],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -52,6 +50,9 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {
+      "inlineStyle": false,
+      "inlineTemplate": true
+    }
   }
 }

@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.hn.getNews().then(res => {
+    this.hn.getNews().subscribe(res => {
       this.posts = res;
 
       this.cd.detectChanges();
